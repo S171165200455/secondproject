@@ -1,0 +1,20 @@
+var app=angular.module("app",['ngRoute'])
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/addPerson',{
+		templateUrl:'pages/createperson.html',
+		controller:'PersonController'
+	})
+	.when('/listOfPersons',{
+		templateUrl:'pages/listofperson.html',
+		controller:'PersonController'
+	})
+	.when('/editPerson/:id',{
+		templateUrl:'pages/editperson.html',
+		controller:'EditController'
+	})
+	.when('/',{
+		templateUrl:'pages/listofperson.html',
+		controller:'PersonController'
+	})
+})

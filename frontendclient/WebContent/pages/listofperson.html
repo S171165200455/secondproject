@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<table>
+<tr ng-repeat="p in persons">
+<td>{{p.username}}</td> <td>{{p.password}}</td> <td>{{p.email}}</td>
+<td><a href="" ng-click="deletePerson(p.id)">Delete</a></td>
+<td><a href="#editPerson/{{p.id}}" ng-click="">Edit</a></td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

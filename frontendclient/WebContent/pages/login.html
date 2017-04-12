@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/controller.js"></script>
+<script type="text/javascript" src="../js/service.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="PersonController">
+<form>
+<table>
+<tr>
+<td>Enter Username : </td> <td><input type="text" ng-model="person.username"></td>
+</tr>
+<tr>
+<td>Enter Email : </td> <td><input type="text" ng-model="person.email"></td>
+</tr>
+<tr>
+<td>Enter Password : </td> <td><input type="text" ng-model="person.password"></td>
+</tr>
+<tr>
+<td><input type="submit" value="login"  ng-click="save()"></td> <td></td>
+</tr>
+</table>
+</form>
+{{result}}
+</div>
+</body>
+
+</html>
